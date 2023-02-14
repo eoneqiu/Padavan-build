@@ -129,6 +129,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        #name: Padavan-packages
-        name: Padavan-packages-$(date +"%Y%m%d%H%M")
+        name: Padavan-packages
         path: /opt/images
