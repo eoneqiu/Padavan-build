@@ -34,6 +34,8 @@ jobs:
       run: |
         git clone --depth=1 https://github.com/zcmhi/Padavan.git /opt/padavan
         #git clone --depth=1 https://github.com/eoneqiu/Padavan.git /opt/padavan
+        #sudo rm -rf /opt/padavan/trunk/user/v2ray/
+        #sudo rm -rf /opt/padavan/trunk/user/xray/
         cd /opt/padavan/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
