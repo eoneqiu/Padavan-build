@@ -32,8 +32,8 @@ jobs:
         pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget
     - name: Clone source code
       run: |
-        #git clone --depth=1 https://github.com/zcmhi/Padavan.git /opt/padavan
-        git clone --depth=1 https://github.com/eoneqiu02/Padavan.git /opt/padavan
+        git clone --depth=1 https://github.com/zcmhi/Padavan.git /opt/padavan
+        #git clone --depth=1 https://github.com/eoneqiu02/Padavan.git /opt/padavan
         cd /opt/padavan/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
@@ -122,7 +122,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT=n" >> .config  #去除南工网络客户端
         echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=y" >> .config #zerotier ~1.3M
         echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=y" >> .config #XUPNPD
-        echo "CONFIG_FIRMWARE_INCLUDE_MSD_LITE=y" >> .config #MSD_LITE
+        #echo "CONFIG_FIRMWARE_INCLUDE_MSD_LITE=y" >> .config #MSD_LITE
         #########################################################################################
         #自定义添加其它功能请参考源码configs/templates/目录下的config文件。按照上面的格式添加即可
         #格式如下：
